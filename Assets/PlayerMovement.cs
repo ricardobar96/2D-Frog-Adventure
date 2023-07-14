@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteR;
 
     private float xAxis = 0f;
+    [SerializeField] private float moveForce = 6f;
+    [SerializeField] private float jumpForce = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +25,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(xAxis * 6f, rb.velocity.y);
+        rb.velocity = new Vector2(xAxis * moveForce, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
         updateAnimation();
