@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animation;
+    private SpriteRenderer spriteR;
 
     private float xAxis = 0f;
 
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animation = GetComponent<Animator>();
+        spriteR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -36,10 +38,12 @@ public class PlayerMovement : MonoBehaviour
         if (xAxis > 0)
         {
             animation.SetBool("running", true);
+            spriteR.flipX = false;
         }
         else if (xAxis < 0)
         {
             animation.SetBool("running", true);
+            spriteR.flipX = true;
         }
         else
         {
