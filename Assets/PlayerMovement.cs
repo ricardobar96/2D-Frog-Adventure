@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animation;
 
+    private float xAxis = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xAxis = Input.GetAxisRaw("Horizontal");
+        xAxis = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(xAxis * 6f, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump"))
@@ -26,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 10f);
         }
 
+        updateAnimation();
+    }
+
+    private void updateAnimation()
+    {
         if (xAxis > 0)
         {
             animation.SetBool("running", true);
