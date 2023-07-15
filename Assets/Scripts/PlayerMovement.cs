@@ -8,10 +8,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animation;
     private SpriteRenderer spriteR;
+    private BoxCollider2D collider;
 
     private float xAxis = 0f;
     [SerializeField] private float moveForce = 6f;
     [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private LayerMask jumpableGround;
 
     private enum playerAction { idle, run, jump, fall }
 
@@ -21,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animation = GetComponent<Animator>();
         spriteR = GetComponent<SpriteRenderer>();
+        collider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -66,5 +69,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         animation.SetInteger("action", (int)action);
+    }
+
+    private bool playerGrounded()
+    {
+        return Physics2D.BoxCast(collider.bounds.center, collider.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 }
