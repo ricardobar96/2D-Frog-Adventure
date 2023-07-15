@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveForce = 6f;
     [SerializeField] private float jumpForce = 10f;
 
+    private enum playerAction { idle, run, jump, fall }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,19 +39,32 @@ public class PlayerMovement : MonoBehaviour
 
     private void updateAnimation()
     {
+        playerAction action;
+
         if (xAxis > 0)
         {
-            animation.SetBool("running", true);
+            action = playerAction.run;
             spriteR.flipX = false;
         }
         else if (xAxis < 0)
         {
-            animation.SetBool("running", true);
+            action = playerAction.run;
             spriteR.flipX = true;
         }
         else
         {
-            animation.SetBool("running", false);
+            action = playerAction.idle;
         }
+
+        if(rb.velocity.y > .1f) 
+        { 
+            action = playerAction.jump;
+        }
+        else if (rb.velocity.y < -.1f)
+        {
+            action = playerAction.fall;
+        }
+
+        animation.SetInteger("action", (int)action);
     }
 }
