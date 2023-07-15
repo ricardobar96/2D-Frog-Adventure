@@ -5680,6 +5680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecd584e758ac1240817f1c7e5be3833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strawberriesCount: {fileID: 1132949716}
 --- !u!1 &1322152314
 GameObject:
   m_ObjectHideFlags: 0
