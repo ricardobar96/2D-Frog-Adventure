@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         xAxis = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(xAxis * moveForce, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && playerGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
