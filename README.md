@@ -5,7 +5,7 @@ Guide the frog through the levels collecting as many strawberries as possible an
 
 ---------------------------------------------
 
-Juego de plataformas en 2D creado con Unity
+Juego de plataformas en 2D creado con Unity y C#.
 Guía a la rana a través de los niveles recolectando tantas fresas como sea posible y evitando muchos peligros.
 
 
