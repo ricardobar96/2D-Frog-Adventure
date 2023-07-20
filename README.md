@@ -8,5 +8,11 @@ Guide the frog through the levels collecting as many strawberries as possible an
 Juego de plataformas en 2D creado con Unity y C#.
 Guía a la rana a través de los niveles recolectando tantas fresas como sea posible y evitando muchos peligros.
 
+![Captura de pantalla 2023-07-20 185634](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/45c61648-4b96-447a-96ab-17e6a99ef84a)
 
-![Captura de pantalla 2023-07-15 212703](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/afc04f24-a9ae-4281-9fd3-a8d45a6394fd)
+
+![Captura de pantalla 2023-07-20 185519](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/0f1d0fe9-5607-4064-a1e8-cbc8bb7ae0e1)
+
+
+
+![Captura de pantalla 2023-07-20 185602](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/887301be-d893-476c-9567-b852c49c0df1)
