@@ -1,12 +1,12 @@
 # 2D-Jump-Game
 
 2D platform game created with Unity and C#. 
-Guide the frog through the levels collecting as many strawberries as possible and avoiding many dangers.
+Guide the frog through the forest collecting as many strawberries as possible and avoiding many dangers.
 
 ---------------------------------------------
 
 Juego de plataformas en 2D creado con Unity y C#.
-Guía a la rana a través de los niveles recolectando tantas fresas como sea posible y evitando muchos peligros.
+Guía a la rana a través del bosque recolectando tantas fresas como sea posible y evitando muchos peligros.
 
 ![Captura de pantalla 2023-07-20 185634](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/45c61648-4b96-447a-96ab-17e6a99ef84a)
 
@@ -14,5 +14,7 @@ Guía a la rana a través de los niveles recolectando tantas fresas como sea pos
 ![Captura de pantalla 2023-07-20 185519](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/0f1d0fe9-5607-4064-a1e8-cbc8bb7ae0e1)
 
 
-
 ![Captura de pantalla 2023-07-20 185602](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/887301be-d893-476c-9567-b852c49c0df1)
+
+
+![Captura de pantalla 2023-07-22 193358](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/5f766395-fdc8-4566-b268-8ae08f32c2db)
