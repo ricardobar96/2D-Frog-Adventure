@@ -17,4 +17,4 @@ Guía a la rana a través del bosque recolectando tantas fresas como sea posible
 ![Captura de pantalla 2023-07-20 185602](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/887301be-d893-476c-9567-b852c49c0df1)
 
 
-![Captura de pantalla 2023-07-22 193358](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/5f766395-fdc8-4566-b268-8ae08f32c2db)
+![Captura de pantalla 2023-07-25 201846](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/2ea5f9b9-3a30-49ae-8614-6f3eaf22f1d7)
