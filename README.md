@@ -1,12 +1,12 @@
 # 2D Frog Adventure
 
 2D platform game created with Unity and C#. 
-Guide the frog through the forest collecting as many strawberries as possible and avoiding many dangers.
+Guide the 🐸 through the forest collecting as many 🍓 as possible and avoiding many dangers.
 
 ---------------------------------------------
 
 Juego de plataformas en 2D creado con Unity y C#.
-Guía a la rana a través del bosque recolectando tantas fresas como sea posible y evitando muchos peligros.
+Guía a la 🐸 a través del bosque recolectando tantas 🍓 como sea posible y evitando muchos peligros.
 
 <br>
 
@@ -35,4 +35,4 @@ https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/c6d86ba6-aa3b-
 <br>
 
 ## License
-Copyright (c) 2023 Ricardo Baloira Armas
+Copyright ©️ 2023 Ricardo Baloira Armas
