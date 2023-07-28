@@ -6,9 +6,9 @@ public class PlantEnemy : MonoBehaviour
 {
     private float idleTime;
 
-    private float attackTime = 3;
+    private float attackTime = 2;
 
-    private Animator animator;
+    public Animator animator;
 
     public GameObject bullet;
 
@@ -24,7 +24,7 @@ public class PlantEnemy : MonoBehaviour
         if(idleTime <= 0) 
         {
             idleTime = attackTime;
-            animator.Play("Plant_attack");
+            animator.Play("Plant_Attack");
             Invoke("ShootBullet", 0.5f);
         }
         else 
@@ -33,7 +33,7 @@ public class PlantEnemy : MonoBehaviour
         }
     }
 
-    private void ShootBullet() 
+    public void ShootBullet() 
     {
         GameObject newBullet;
 
