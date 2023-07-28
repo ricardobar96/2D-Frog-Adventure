@@ -10,7 +10,7 @@ public class PlantEnemy : MonoBehaviour
 
     private Animator animator;
 
-    private GameObject bullet;
+    public GameObject bullet;
 
     public Transform shootingPoint;
 }
