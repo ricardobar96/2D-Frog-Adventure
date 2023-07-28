@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class PlantBullet : MonoBehaviour
 {
-    private float speed = 2;
+    private float speed = 5;
 
-    private float duration = 2;
+    private float duration = 5;
 
     public bool left;
 
