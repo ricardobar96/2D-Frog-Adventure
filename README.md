@@ -10,7 +10,7 @@ Guía a la 🐸 a través del bosque recolectando tantas 🍓 como sea posible y
 
 <br>
 
-| [🎮 Preview](##Preview) | [:camera: Screenshots](##Screenshots) | [🔖 License](##License) |
+| [🎮 Preview](#preview) | [:camera: Screenshots](#screenshots) | [🔖 License](#license) |
 | --------------- | -------- | ----------- |
 
 <br>
