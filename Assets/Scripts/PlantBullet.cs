@@ -7,7 +7,7 @@ public class PlantBullet : MonoBehaviour
 {
     private float speed = 5;
 
-    private float duration = 3.5f;
+    public float duration = 3.5f;
 
     public bool left;
 
