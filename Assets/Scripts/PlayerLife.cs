@@ -43,7 +43,6 @@ public class PlayerLife : MonoBehaviour
         if (player.transform.position.y < -11f)
         {
             animator.Play("Player_Death");
-            deathSfx.Play();
             rb.bodyType = RigidbodyType2D.Static;
             Invoke("ResetLevel", 0.5f);
         }
