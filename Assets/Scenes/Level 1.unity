@@ -148202,11 +148202,11 @@ GameObject:
   - component: {fileID: 1269485138}
   - component: {fileID: 1269485139}
   - component: {fileID: 1269485140}
+  - component: {fileID: 1269485144}
   - component: {fileID: 1269485141}
   - component: {fileID: 1269485142}
   - component: {fileID: 1269485143}
   - component: {fileID: 1269485145}
-  - component: {fileID: 1269485144}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
