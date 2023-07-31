@@ -15,12 +15,13 @@ public class Finish : MonoBehaviour
         if(collision.gameObject.name == "Player") 
         { 
             finishSfx.Play();
-            //FinishLevel();
+            FinishLevel();
         }
     }
 
     private void FinishLevel() 
     { 
-        finishSfx.Play(); 
+        finishSfx.Play();
+        Application.Quit();
     }
 }
