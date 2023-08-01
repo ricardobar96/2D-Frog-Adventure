@@ -24,6 +24,9 @@ Guía a la 🐸 a través del bosque recolectando tantas 🍓 como sea posible y
 
 ## Screenshots
 
+![start-screen](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/43a74319-af04-4d4c-84d8-518afa351c2d)
+
+
 ![Captura de pantalla 2023-07-30 163509](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/5926400d-508a-471a-ae5b-cc21bdb7f07a)
 
 
