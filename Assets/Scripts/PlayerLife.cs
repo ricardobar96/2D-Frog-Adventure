@@ -28,6 +28,14 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Checkpoint"))
+        {
+            respawnPoint = transform.position;
+        }
+    }
+
     private void PlayerDeath() 
     {
         deathSfx.Play();
