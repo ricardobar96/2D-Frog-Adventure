@@ -8,6 +8,7 @@ public class PlayerLife : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private GameObject player;
+    private Vector3 respawnPoint;
 
     [SerializeField] private AudioSource deathSfx;
 
@@ -16,6 +17,7 @@ public class PlayerLife : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
+        respawnPoint = player.transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,7 +37,9 @@ public class PlayerLife : MonoBehaviour
 
     private void ResetLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        transform.position = respawnPoint;
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        animator.Play("Player_Idle");
     }
 
     private void Update()
