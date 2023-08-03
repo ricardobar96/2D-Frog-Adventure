@@ -48,6 +48,7 @@ public class PlayerLife : MonoBehaviour
         transform.position = respawnPoint;
         rb.bodyType = RigidbodyType2D.Dynamic;
         animator.Play("Player_Idle");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void Update()
