@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject player;
     private Vector3 respawnPoint;
+    private int lives = 2;
 
+    [SerializeField] private Text livesCount;
     [SerializeField] private AudioSource deathSfx;
 
     private void Start()
@@ -24,6 +27,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Spikes")) 
         {
+            Invoke("TakeLife", 0.5f);
             PlayerDeath();
         }
     }
@@ -59,5 +63,11 @@ public class PlayerLife : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Static;
             Invoke("ResetLevel", 0.5f);
         }
+    }
+
+    private void TakeLife()
+    {
+        lives--;
+        livesCount.text = ("X " + lives);
     }
 }
