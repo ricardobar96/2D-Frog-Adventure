@@ -27,7 +27,6 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Spikes")) 
         {
-            Invoke("TakeLife", 0.5f);
             PlayerDeath();
         }
     }
@@ -41,7 +40,7 @@ public class PlayerLife : MonoBehaviour
     }
 
     private void PlayerDeath() 
-    {
+    { 
         deathSfx.Play();
         rb.bodyType = RigidbodyType2D.Static;
         animator.SetTrigger("death");
@@ -49,10 +48,15 @@ public class PlayerLife : MonoBehaviour
 
     private void ResetLevel()
     {
-        transform.position = respawnPoint;
-        rb.bodyType = RigidbodyType2D.Dynamic;
-        animator.Play("Player_Idle");
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Invoke("TakeLife", 0.1f);
+
+        if(lives > 0) 
+        {
+            transform.position = respawnPoint;
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            animator.Play("Player_Idle");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void Update()
@@ -61,7 +65,7 @@ public class PlayerLife : MonoBehaviour
         {
             animator.Play("Player_Death");
             rb.bodyType = RigidbodyType2D.Static;
-            Invoke("ResetLevel", 0.5f);
+            //Invoke("ResetLevel", 0.5f);
         }
     }
 
