@@ -75,7 +75,7 @@ public class PlayerLife : MonoBehaviour
 
         else 
         {
-            lives -= 1;
+            lives--;
             livesCount.text = ("x " + lives);
         }
     }
