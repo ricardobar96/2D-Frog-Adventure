@@ -67,7 +67,16 @@ public class PlayerLife : MonoBehaviour
 
     private void TakeLife()
     {
-        lives--;
-        livesCount.text = ("X " + lives);
+        if(lives == 0)
+        {
+            lives = 2;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
+        else 
+        {
+            lives -= 1;
+            livesCount.text = ("x " + lives);
+        }
     }
 }
