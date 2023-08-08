@@ -41,7 +41,7 @@ public class PlayerLife : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Kiwi"))
         {
-            //itemSfx.Play();
+            lifeSfx.Play();
             Destroy(collision.gameObject);
             lives++;
             livesCount.text = ("x " + lives);
