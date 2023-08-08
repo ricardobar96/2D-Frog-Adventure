@@ -14,6 +14,7 @@ public class PlayerLife : MonoBehaviour
 
     [SerializeField] private Text livesCount;
     [SerializeField] private AudioSource deathSfx;
+    [SerializeField] private AudioSource lifeSfx;
 
     private void Start()
     {
@@ -28,6 +29,14 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Spikes")) 
         {
             PlayerDeath();
+        }
+
+        if (collision.gameObject.CompareTag("Kiwi"))
+        {
+            //itemSfx.Play();
+            Destroy(collision.gameObject);
+            lives++;
+            livesCount.text = ("x " + lives);
         }
     }
 
