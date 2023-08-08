@@ -30,14 +30,6 @@ public class PlayerLife : MonoBehaviour
         {
             PlayerDeath();
         }
-
-        if (collision.gameObject.CompareTag("Kiwi"))
-        {
-            //itemSfx.Play();
-            Destroy(collision.gameObject);
-            lives++;
-            livesCount.text = ("x " + lives);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,6 +37,14 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Checkpoint"))
         {
             respawnPoint = transform.position;
+        }
+
+        if (collision.gameObject.CompareTag("Kiwi"))
+        {
+            //itemSfx.Play();
+            Destroy(collision.gameObject);
+            lives++;
+            livesCount.text = ("x " + lives);
         }
     }
 
