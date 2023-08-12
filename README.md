@@ -17,7 +17,7 @@ Guía a la 🐸 a través del bosque recolectando tantas 🍓 como sea posible y
 
 ## Preview
 
-[<img src="https://cdn.pixabay.com/photo/2019/06/25/12/59/click-here-4298145_1280.png" width="50%">](https://www.youtube.com/watch?v=y96_xUaDqOA&ab_channel=ilarioRaio "Preview 2D Frog Adventure")
+[<img src="https://cdn.pixabay.com/photo/2019/06/25/12/59/click-here-4298145_1280.png" width="50%">](https://www.youtube.com/watch?v=K1_3CJZoRBE&ab_channel=ilarioRaio "Preview 2D Frog Adventure")
 
 
 <br>
