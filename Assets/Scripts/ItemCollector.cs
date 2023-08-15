@@ -9,11 +9,13 @@ public class ItemCollector : MonoBehaviour
     public int highScore = 0;
 
     [SerializeField] private Text strawberriesCount;
+    [SerializeField] private Text bestScore;
     [SerializeField] private AudioSource itemSfx;
 
     private void Start()
     {
         highScore = PlayerPrefs.GetInt("highScore");
+        bestScore.text = ("Best Score: " + highScore);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,6 +30,7 @@ public class ItemCollector : MonoBehaviour
             if(strawberries > highScore) 
             {
                 PlayerPrefs.SetInt("highScore", strawberries);
+                bestScore.text = ("Best Score: " + highScore);
             }
         }
     }
