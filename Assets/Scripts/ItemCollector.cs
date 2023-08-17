@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int strawberries = 0;
+    public int strawberries = 0;
     public int highScore = 0;
 
     [SerializeField] private Text strawberriesCount;
-    [SerializeField] public Text bestScore;
+    [SerializeField] private Text bestScore;
     [SerializeField] private AudioSource itemSfx;
 
     private void Start()
