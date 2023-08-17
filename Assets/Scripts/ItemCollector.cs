@@ -9,12 +9,12 @@ public class ItemCollector : MonoBehaviour
     public int highScore = 0;
 
     [SerializeField] private Text strawberriesCount;
-    [SerializeField] private Text bestScore;
+    [SerializeField] public Text bestScore;
     [SerializeField] private AudioSource itemSfx;
 
     private void Start()
     {
-        highScore = PlayerPrefs.GetInt("highScore");
+        highScore = PlayerPrefs.GetInt("highScore", 0);
         bestScore.text = ("Best Score: " + highScore);
     }
 
@@ -30,6 +30,7 @@ public class ItemCollector : MonoBehaviour
             if(strawberries > highScore) 
             {
                 PlayerPrefs.SetInt("highScore", strawberries);
+                PlayerPrefs.Save();
                 bestScore.text = ("Best Score: " + highScore);
             }
         }
