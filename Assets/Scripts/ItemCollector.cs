@@ -15,7 +15,7 @@ public class ItemCollector : MonoBehaviour
     private void Start()
     {
         highScore = PlayerPrefs.GetInt("highScore", 0);
-        bestScore.text = ("Best Score: " + highScore);
+        bestScore.text = ("Best Score: " + highScore + "/35");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,7 +31,7 @@ public class ItemCollector : MonoBehaviour
             {
                 PlayerPrefs.SetInt("highScore", strawberries);
                 PlayerPrefs.Save();
-                bestScore.text = ("Best Score: " + highScore);
+                bestScore.text = ("Best Score: " + highScore + "/35");
             }
         }
     }
