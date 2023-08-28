@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EndGame : MonoBehaviour
 {
+    public void Start()
+    {
+        Cursor.visible = true;
+    }
     public void End() 
     { 
         Application.Quit();
