@@ -2,11 +2,13 @@
 
 2D platform game created with Unity and C#. 
 Guide the 🐸 through the forest collecting as many 🍓 as possible and avoiding many dangers.
+Move the character with the arrows &larr; &rarr; and jump with <kbd>Space</kbd>
 
 ---------------------------------------------
 
 Juego de plataformas en 2D creado con Unity y C#.
 Guía a la 🐸 a través del bosque recolectando tantas 🍓 como sea posible y evitando muchos peligros.
+Mueve al personaje con las flechas &larr; &rarr; y salta con <kbd>Space</kbd>
 
 <br>
 
