@@ -28,7 +28,7 @@ Mueve al personaje con las flechas del teclado y salta con <kbd>Space</kbd>
 
 ## Screenshots
 
-![Captura de pantalla 2023-08-19 112002](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/14548755-9eb0-4acf-9687-90fc72dfd761)
+![Captura de pantalla 2023-08-29 165228](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/b871bbba-f2d8-4d63-9d71-eaa9897064ad)
 
 
 ![Captura de pantalla 2023-08-04 202743](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/314b36f0-e630-4a60-9795-650fd930189c)
@@ -37,7 +37,10 @@ Mueve al personaje con las flechas del teclado y salta con <kbd>Space</kbd>
 ![Captura de pantalla 2023-08-04 203212](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/6de2754f-7e35-4152-a8c2-735cdf95752a)
 
 
-![Captura de pantalla 2023-07-25 201846](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/2ea5f9b9-3a30-49ae-8614-6f3eaf22f1d7)
+![Captura de pantalla 2023-08-29 165948](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/37360d75-5862-498e-8ddd-98885676db3d)
+
+
+![Captura de pantalla 2023-08-29 170135](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/94e5f66d-4109-4255-ab0c-d11b4a885feb)
 
 
 ![Captura de pantalla 2023-08-25 171054](https://github.com/ricardobar96/2D-Frog-Adventure/assets/73242474/39d0c411-a3f2-44b7-ab93-dfb14a3cc653)
