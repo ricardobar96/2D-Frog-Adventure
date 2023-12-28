@@ -29,7 +29,7 @@ Mueve al personaje con las flechas del teclado y salta con <kbd>Space</kbd>
 
 ## Preview
 
-[<img src="https://cdn.pixabay.com/photo/2019/06/25/12/59/click-here-4298145_1280.png" width="50%">](https://www.youtube.com/watch?v=ZZD9Gz4yYV0 "Preview 2D Frog Adventure")
+[<img src="images/button.png" width="50%">](https://www.youtube.com/watch?v=ZZD9Gz4yYV0 "Preview 2D Frog Adventure")
 
 
 <br>
